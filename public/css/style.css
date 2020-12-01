@@ -37,6 +37,9 @@ img {
     max-width: 40%;
     height: auto;
     padding: 25px;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 .instructions {
@@ -50,7 +53,7 @@ img {
     align-items: center;
 }
 
-.question {
+#question {
     margin: auto;
     width: 75%;
     margin: 18px;
@@ -77,11 +80,18 @@ img {
     background-color: rgba(60, 40, 107, 1);
 }
 
-.reset {
+.resetButton {
     text-align: center;
     margin: 0px 5px;
     padding: 5px 15px;
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#answer {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 1200px) {
