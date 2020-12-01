@@ -1,0 +1,98 @@
+html {
+    background-image: linear-gradient(rgba(60, 40, 107, 1), rgba(201, 47, 161), rgba(60, 40, 107, 1));
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.topleft {
+    flex: 50%;
+    max-width: 70%;
+    height: auto;
+    padding: 5px;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    margin: auto;
+    max-width: 80%;
+}
+
+.ball {
+    flex: 50%;
+    margin: auto;
+    max-width: 40%;
+    height: auto;
+    padding: 25px;
+}
+
+.instructions {
+    color: white;
+    text-align: center;
+}
+
+.qbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question {
+    margin: auto;
+    width: 75%;
+    margin: 18px;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: rgba(33, 0, 175, 1.0);
+    padding: 5px 15px;
+}
+
+.buttons {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.ask {
+    text-align: center;
+    background-color: rgba(33, 0, 175, 1.0);
+    color: white;
+    margin: 0px 5px;
+    padding: 5px 15px;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.ask:hover {
+    background-color: rgba(60, 40, 107, 1);
+}
+
+.reset {
+    text-align: center;
+    margin: 0px 5px;
+    padding: 5px 15px;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        flex-direction: column;
+        margin-right: 0%;
+    }
+    .logo{
+        max-width: 100%;
+    }
+    .ball {
+        max-width: 70%;
+    }
+}
