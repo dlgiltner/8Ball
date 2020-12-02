@@ -3,6 +3,7 @@
     <head>
         <title>Enchanted 8 Ball</title>
         <meta charset="utf-8">
+        <meta name="description" content="Let the Enchanted 8 Ball predict your future and tell your fortune!">
         <link rel="icon" type="image/ico" href="public/img/8ball_icon.ico">
         <link rel="stylesheet" type="text/css" href="public/css/style.css">
     </head>
@@ -11,25 +12,31 @@
             You need to enable JavaScript to run this app.
         </noscript>
         <script src="public/js/8Ball.js"></script>
-        <div class="topleft">
-            <div class="logo">
-                <img src="public/img/Ench8BallLogo.png" alt="Enchanted 8 Ball Logo">
-            </div>
-            <p class="instructions">
-                Type a question that can be answered “yes” or “no” in the box below,
-                then click the Ask button to get the Enchanted 8 Ball’s advice!
-            </p>
-            <div class="qbar">
-                <input type="text" id="question" placeholder="Enter your question here!" />
-                <div class="buttons">
-                    <button class="ask" onclick="flipBall()">Ask the 8 Ball!</button>
-                    <button class="resetButton" onclick="resetBall()">Reset</button>
+        <div class="container">
+            <div class="topleft">
+                <div class="logo">
+                    <img src="public/img/Ench8BallLogo.png" alt="Enchanted 8 Ball Logo">
+                </div>
+                <p class="instructions">
+                    Type a question that can be answered “yes” or “no” in the box below,
+                    then click the Ask button to get the Enchanted 8 Ball’s advice!
+                </p>
+                <div class="qbar">
+                    <input type="text" id="question" placeholder="Enter your question here!" />
+                    <div class="buttons">
+                        <button class="ask" onclick="flipBall()">Ask the 8 Ball!</button>
+                        <button class="resetButton" onclick="resetBall()">Reset</button>
+                    </div>
                 </div>
             </div>
+            <div class="ball">
+                <p id="answer"></p>
+                <img id="eightBall" src="public/img/8ballfront.png" alt="Enchated 8 Ball showing the number 8.">
+            </div>
         </div>
-        <div class="ball">
-            <p id="answer"></p>
-            <img id="eightBall" src="public/img/8ballfront.png" alt="Enchated 8 Ball showing the number 8.">
-        </div>
+        <footer>
+            <p>Enchanted 8 Ball is inspired by "Magic 8 Ball", currently under a registered trademark by Mattel, Inc. Any resemblance to the "Magic 8 Ball" trademark is used without permission. Mattel, Inc. is not affiliated with this site in anyway.</p>
+            <p>By using this fortune teller, you are doing so at your own risk. The creator will not be responsible for any decisions based on answers from the Enchanted 8 Ball.</p>
+        </footer>
     </body>
 </html>
